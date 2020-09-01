@@ -20,9 +20,6 @@ public class TopLevel {
         try {
             midLevel.call();
         } catch (MidLevelException e) {
-            System.out.println("1. passing exception to println:\n");
-            System.out.println(e);
-            System.out.println("\n2. calling printStackTrace on the exception:\n");
             e.printStackTrace();
         }
     }
